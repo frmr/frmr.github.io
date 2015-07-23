@@ -10,6 +10,7 @@
                 color: inherit;
                 font-weight: bold;
             }
+            
             a:link {
                 text-decoration: none;
             }
@@ -33,25 +34,47 @@
             
             body {
                 font-family: "Trebuchet MS", Helvetica, sans-serif;
+                background-color: #DADADA;
+                height: 100%;
+                margin: 0;
+                padding: 0;
             }
             
             current {
-                color:#FF6600;
+                color: #FF6600;
             }
             
             current:hover {
-                color:#FF9600;
+                color: #FF9600;
             }
 
+            .wrapper {
+                margin: auto;
+                max-width: 45em;
+                background-color: #FFFFFF;
+                height: auto;
+                min-height: 100%;
+            }
+            
+            .content {
+                margin: auto;
+                max-width: 30em;
+                background-color: #FFFFFF;
+                height: auto;
+                padding-left: 2em;
+                padding-right: 2em;
+                text-align: justify;
+            }
+            
         </style>
         <title>
             Portfolio of Tom Farmer
         </title>
     </head>
     
-    <body style="background-color:#DADADA; height:100%; margin:0; padding:0">
-        <div style="margin:auto; max-width:45em; background-color:#FFFFFF; height:auto; min-height:100%">
-            <div style="margin:auto; max-width:30em; background-color:#FFFFFF; height:auto; padding-left:2em; padding-right:2em">
+    <body>
+        <div class="wrapper">
+            <div class="content">
                 <div style="text-align:center">
                     <br>
                     
@@ -87,13 +110,10 @@
                 <br>
                 <hr>
             
-                <div style="text-align:justify">
-                
-                    <p>
-                        Hi there! Thank you for taking the time to look at my portfolio. If you have any questions about the projects listed below, or if you have information about employment opportunities that you think would be of interest to me, please e-mail:
-                    </p>
-                    
-                </div>
+                <p>
+                    Hi there! Thank you for taking the time to look at my portfolio. If you have any questions about the projects listed below, or if you have information about employment opportunities that you think would be of interest to me, please e-mail:
+                </p>
+
                 
                 <div style="text-align:center">
                     <p>
@@ -105,8 +125,7 @@
                 </div>
                 
                 <hr>
-                
-                <div style="text-align:justify">
+
                     <p>
                         <a href="/globe.html">
                             Globe demo
@@ -146,10 +165,9 @@
                         <br>
                         Simplified C++ interface for the enet networking library.
                     </p>
-                    
+
                     <br>
-                    
-                </div>
+
             </div>
         </div>
     </body>
