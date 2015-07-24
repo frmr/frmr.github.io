@@ -58,3 +58,7 @@ current:hover {
     padding-right: 2em;
     text-align: justify;
 } 
+
+.title {
+    text-align: center;
+    font-size: 175%;
