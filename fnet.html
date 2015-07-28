@@ -45,7 +45,14 @@
                         fnet
                     </div>
                 </p>
-            
+
+                <p>
+                    A popular choice for those wanting to do networking in C and C++ is the enet library, which provides "a relatively thin, simple and robust network communication layer on top of UDP".
+                    I created fnet to simplify this layer even further into just two C++ classes: fnet::Server and fnet::Client.
+                    These classes provide just a handful of very useful methods, such as Send (send a message to a client), Broadcast (send a message to all clients) and Ping (ping a client).
+                    I tested this design in a small tank battle game, with good results.
+                </p>
+                
                 <p>
                     I started working on fnet out of necessity, but it eventually became an interesting exercise in class interface design.
                     I had recently read Scott Meyers' <i>Effective C++</i>, which advocates "minimal and complete" class interfaces.
