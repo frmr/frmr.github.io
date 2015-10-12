@@ -3,79 +3,90 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex, nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-65852729-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
         <title>
             Portfolio of Tom Farmer
         </title>
     </head>
-    
+
     <body>
         <div class="wrapper">
             <div class="content">
                 <div style="text-align:center">
                     <br>
-                    
+
                     <h1>
                         Tom Farmer
                     </h1>
-                    
+
                     <br>
-                    
+
                     <a href="index.html">
                         <current>
                             Portfolio
                         </current>
                     </a>
-                    
+
                     &nbsp;
                     &nbsp;
-                    
+
                     <a href="cv.html">
                         CV
                     </a>
 
                 </div>
-                
+
                 <br>
                 <hr>
-            
+
                 <p>
                     <div class="title">
                         Wizmatch
                     </div>
                 </p>
-            
+
                 <p>
                     Inspired by a life-long love of first-person games, Wizmatch is a demonstration of some features that might be useful in a larger game project.
                     It was implemented in C++, with OpenGL 2.1 for rendering.
                 </p>
-                
+
                 <p>
                     The most interesting feature is the zone/portal occlusion culling system, which reduces rendering time by dividing the map into user-defined zones, with 'portals' placed in doorways and corridors between them.
                     If a portal in the current zone lies in the player's line of sight, the zones beyond it are drawn recursively.
                     A custom map format was used to specify the locations of zones and portals, and the relationships between them.
                 </p>
-                    
+
                 <p>
                     Wizmatch also uses deferred rendering, in which the world geometry is first rendered without lighting to offscreen buffers, then each light performs its own calculations on that data and contributes to the final image.
                     The screenshot below shows an example map with three zones.
                     Each zone has its own light (they could have more), but lights can affect any zone drawn on the current frame, resulting in a smooth blending of colours.
                 </p>
-                
+
                 <p>
                     Originally envisioned features also included animated billboards, networking and a robust system of magical effects.
                     However, I eventually decided that there would be little to learn from implementing these (most had been implemented in other prototypes) and focused instead on the <a href="cck.html">CCK</a>.
                 </p>
-                
+
                 <p>
                     <a href="https://github.com/frmr/wizmatch">
                         Source code
                     </a>
                 </p>
-                
+
                 <br>
-                
+
                 <div style="text-align:center">
                     <a href="images/wizmatch.png">
                         <img src="images/wizmatch_preview.png" style="width:10em; height:auto">
@@ -88,4 +99,4 @@
         </div>
     </body>
 
-</html> 
+</html>

@@ -3,72 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex, nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-65852729-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
         <title>
             Portfolio of Tom Farmer
         </title>
     </head>
-    
+
     <body>
         <div class="wrapper">
             <div class="content">
                 <div style="text-align:center">
                     <br>
-                    
+
                     <h1>
                         Tom Farmer
                     </h1>
-                    
+
                     <br>
-                    
+
                     <a href="index.html">
                         <current>
                             Portfolio
                         </current>
                     </a>
-                    
+
                     &nbsp;
                     &nbsp;
-                    
+
                     <a href="cv.html">
                         CV
                     </a>
 
                 </div>
-                
+
                 <br>
                 <hr>
-            
+
                 <p>
                     <div class="title">
                         Ray Tracer
                     </div>
                 </p>
-            
+
                 <p>
                     One of the most enjoyable parts of the computer science course at Swansea university was a research module that allowed us to study a topic of our choice, with the aim of producing a report and giving a short presentation.
                 </p>
-                
+
                 <p>
                     My interest in graphics led me to study ray tracing, and rather than just read about it, I chose to create my own ray tracer from scratch.
                     The final product features reflection, multithreading, super-sampled anti-aliasing, sample-based depth of field, HDR rendering and a dithering post-process which takes advantage of the floating-point colour channels to reduce colour banding.
-                    It handles ray collisions with spheres and planes, and each shape can have its own colour. 
+                    It handles ray collisions with spheres and planes, and each shape can have its own colour.
                 </p>
-                    
+
                 <p>
                     I produced a report detailing the performance characteristics of these features (such as the effect on render time of increasing the number of available cores), using command line switches to control the quality of the output.
                     The example output below took a few minutes to render on one of the university's quad-core Linux workstations.
                 </p>
-                
+
                 <p>
                     <a href="https://github.com/frmr/raytracer">
                         Source code
                     </a>
                 </p>
-                
+
                 <br>
-                
+
                 <div style="text-align:center">
                     <a href="images/raytracer.png">
                         <img src="images/raytracer_preview.png" style="width:10em; height:auto">
@@ -81,4 +92,4 @@
         </div>
     </body>
 
-</html> 
+</html>
