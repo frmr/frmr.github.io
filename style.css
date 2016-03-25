@@ -57,9 +57,59 @@ current:hover {
     height: auto;
     padding-left: 2em;
     padding-right: 2em;
-    text-align: justify;
+    text-align: center;
+    position: relative;
 } 
 
 .title {
     text-align: center;
     font-size: 175%;
+}
+
+.list-item-centering-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.list-item-container{
+    display: inline-block;
+    margin: auto;
+    background-color: blue;
+    text-align: left;
+}
+
+.list-item {
+    display: inline-block;
+    outline: 2px solid #DDD;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 12em;
+    height: 20em;
+    overflow: hidden;
+}
+
+.list-item-title {
+    float: left;
+    margin: 0.25em;
+    text-align: center;
+    width: 100%;
+    font-size: 110%;
+}
+
+.list-item-content {
+    float: left;
+    margin: 0.25em;
+    text-align: justify;
+}
+
+.preview {
+    float: left;
+    width: 100%;
+}
+
+.image-preview {
+    display: block;
+    margin: 0 auto;
+    width: initial;
+    max-width: 100%;
+}
