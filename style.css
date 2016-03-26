@@ -32,6 +32,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 
 current {
@@ -57,7 +58,7 @@ current:hover {
     height: auto;
     padding-left: 2em;
     padding-right: 2em;
-    text-align: center;
+    text-align: justify;
     position: relative;
 } 
 
@@ -68,32 +69,37 @@ current:hover {
 
 .list-item-centering-container {
     display: inline-block;
+    width: 100%;
     text-align: center;
 }
 
-.list-item-container{
+.list-item-row-group{
     display: inline-block;
+    text-align: center;
     margin: auto;
-    background-color: blue;
-    text-align: left;
 }
 
 .list-item {
     display: inline-block;
-    outline: 2px solid #DDD;
+    outline: 1px solid #DDD;
     padding: 0.5em;
     width: 100%;
     max-width: 12em;
-    height: 20em;
+    height: 21em;
     overflow: hidden;
+    margin: 0.5em;
 }
 
 .list-item-title {
-    float: left;
     margin: 0.25em;
-    text-align: center;
+    float: left;
     width: 100%;
     font-size: 110%;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
 }
 
 .list-item-content {
@@ -105,6 +111,7 @@ current:hover {
 .preview {
     float: left;
     width: 100%;
+    margin-bottom: 0.5em;
 }
 
 .image-preview {
@@ -112,4 +119,5 @@ current:hover {
     margin: 0 auto;
     width: initial;
     max-width: 100%;
+    height: 150px;
 }
