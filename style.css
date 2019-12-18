@@ -79,6 +79,12 @@ current:hover {
     padding: 0.5em;
     margin: 1em;
     float: left;
+    border: 2px solid #FFF;
+}
+
+.project:hover {
+    border: 2px solid #DDD;
+    cursor: pointer;
 }
 
 .project-thumbnail {
