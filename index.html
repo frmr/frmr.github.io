@@ -6,16 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link rel="stylesheet" type="text/css" href="style.css">
         
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-65852729-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-        
         <title>
             Portfolio of Tom Farmer
         </title>
@@ -66,48 +56,39 @@
                 </div>
                 
                 <hr>
+                
+                <div id='project-container'>
 
-                <p>
-                    <a href="globe.html">
-                        Globe demo
-                    </a>
-                    <br>
-                    Demonstration of new approaches to procedural world generation.
-                </p>
-                
-                <p>
-                    <a href="cck.html">
-                        Continent Construction Kit
-                    </a>
-                    <br>
-                    Library that uses simple structures to model continental interactions and efficiently produce semi-realistic geographic features.
-                </p>
-                
-                <p>
-                    <a href="wizmatch.html">
-                        Wizmatch
-                    </a>
-                    <br>
-                    Example implementation of a first-person shooter featuring deferred rendering, zone/portal culling, a binary model format and custom tools.
-                </p>
-                
-                <p>
-                    <a href="raytracer.html">
-                        Ray tracer
-                    </a>
-                    <br>
-                    Ray tracer featuring reflection, multithreading, anti-aliasing, depth-of-field, HDR rendering and dithering of floating-point colour channels.
-                </p>
-                
-                <p>
-                    <a href="fnet.html">
-                        fnet
-                    </a>
-                    <br>
-                    Simplified C++ interface for the enet networking library.
-                </p>
+                    <div class='project'>
+                        <img class='project-thumbnail' src='thumbnails/software-renderer.png'>
+                        <div class='project-title'>Software Renderer</div>
+                        <div class='project-blurb'>Featuring a perspective-correct texture mapping, bilinear filtering and more.</div>
+                    </div>
 
-                <br>
+                    <div class='project'>
+                        <img class='project-thumbnail' src='thumbnails/wakarahende.png'>
+                        <div class='project-title'>Wakarahende</div>
+                        <div class='project-blurb'>A website to help people learn Japanese vocabulary using a unique method.</div>
+                    </div>
+
+                    <div class='project'>
+                        <img class='project-thumbnail' src='thumbnails/dissertation.png'>
+                        <div class='project-title'>Dissertation</div>
+                        <div class='project-blurb'>“Evaluating the performance and usability of task parallelism on Intel Xeon and Xeon Phi processors”</div>
+                    </div>
+
+                    <div class='project'>
+                        <img class='project-thumbnail' src='thumbnails/deferred-renderer_preview.png'>
+                        <div class='project-title'>Deferred Renderer</div>
+                        <div class='project-blurb'>Featuring zone/portal culling</div>
+                    </div>
+
+                    <div class='project'>
+                        <img class='project-thumbnail' src='thumbnails/raytracer_preview.png'>
+                        <div class='project-title'>Ray Tracer</div>
+                        <div class='project-blurb'>This is my nice ray tracer, but check out the other projects, too</div>
+                    </div>
+                </div>
 
             </div>
         </div>
