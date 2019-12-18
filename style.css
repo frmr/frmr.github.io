@@ -26,6 +26,11 @@ h1 {
     font-size: 225%;
 }
 
+.header-link {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: #FFF;
