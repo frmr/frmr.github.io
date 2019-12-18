@@ -98,3 +98,12 @@ body {
 .project-blurb {
     text-align: center;
 }
+
+.project-filler {
+    width: 18em;
+    height: 24em;
+    padding: 0.5em;
+    margin: 1em;
+    float: left;
+    border: 2px solid #FFF;
+}
