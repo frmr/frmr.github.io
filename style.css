@@ -68,12 +68,12 @@ current:hover {
 #project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .project {
-    width: 12.5em;
-    height: 18em;
+    width: 20em;
+    height: 30em;
     padding: 0.5em;
     margin: 0.5em;
     border: 1px solid #DDD;
@@ -87,4 +87,6 @@ current:hover {
 .project-title {
     font-size: 1.25em;
     text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
