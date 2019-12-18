@@ -6,19 +6,19 @@ a {
 }
 
 a:link {
-    color: darkblue;
+    color: #00D;
 }
 
 a:visited {
-    color: darkblue;
+    color: #00D;
 }
 
 a:hover {
-    color: blue;
+    color: #00D;
 }
 
 a:active {
-    color: blue;
+    color: #00D;
 }
 
 h1 {
@@ -33,14 +33,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-}
-
-current {
-    color: #FF6600;
-}
-
-current:hover {
-    color: #FF9600;
 }
 
 .wrapper {
@@ -61,7 +53,7 @@ current:hover {
     text-align: justify;
 } 
 
-.title {
+.project-page-title {
     text-align: center;
     font-size: 175%;
 }
@@ -70,7 +62,6 @@ current:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2em;
 }
 
 .project {
