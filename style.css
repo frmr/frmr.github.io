@@ -42,7 +42,7 @@ body {
 
 .wrapper {
     margin: auto;
-    max-width: 45em;
+    max-width: 70em;
     background-color: #FFFFFF;
     height: auto;
     min-height: 100%;
@@ -97,13 +97,4 @@ body {
 
 .project-blurb {
     text-align: center;
-}
-
-.project-filler {
-    width: 18em;
-    height: 24em;
-    padding: 0.5em;
-    margin: 1em;
-    float: left;
-    border: 2px solid #FFF;
 }
