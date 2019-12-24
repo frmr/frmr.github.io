@@ -68,7 +68,6 @@ for filename in os.listdir():
         page = page.replace('###SELECTORS###', create_selectors_html(filename))
 
         print(get_title(filename))
-        print(page)
         write_page(filename, page);
         write_media_js(filename)
         
