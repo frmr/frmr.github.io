@@ -14,7 +14,7 @@ def get_title(folder):
         with open(title_file, 'r') as file:
             return file.read().replace('\n', '')
     except:
-        return 'Not present'
+        return 'Title folder not present'
 
 def get_text(folder):
     text_file = os.path.join(folder, 'text.txt')
@@ -34,6 +34,15 @@ def create_text_html(folder):
 
     return html
 
+def create_selectors_html(folder):
+    media_folder = os.path.join(folder, 'media')
+    html = ''
+
+    for filename in os.listdir(media_folder):
+         html += "<div class='project-page-selector'></div>"
+
+    return html
+
 def open_template():
     with open('template.html', 'r') as file:
         return file.read();
@@ -44,6 +53,8 @@ def write_page(folder, html):
     with open(filename, 'w') as file:
         file.write(html)
 
+
+
 template = open_template();
 
 for filename in os.listdir():
@@ -51,6 +62,7 @@ for filename in os.listdir():
         page = template;
         page = page.replace('###TITLE###', get_title(filename))
         page = page.replace('###TEXT###', create_text_html(filename))
+        page = page.replace('###SELECTORS###', create_selectors_html(filename))
 
         print(get_title(filename))
         print(page)

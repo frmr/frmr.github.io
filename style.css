@@ -150,7 +150,7 @@ body {
     justify-content: center;
 }
 
-#project-page-selector {
+.project-page-selector {
     display: block;
     float: left;
     width: 1.5em;
