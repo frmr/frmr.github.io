@@ -152,6 +152,9 @@ body {
     margin-right: 0.25em;
     cursor: pointer;
     color: #aaa;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
 }
 
 @media (max-width: 500px) {
