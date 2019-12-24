@@ -1,0 +1,1 @@
+This globe demo is intended to be used as a test bench for algorithms that produce the political borders of countries on a procedurally generated planet. Very few serious attempts seem to have been made to develop such algorithms.

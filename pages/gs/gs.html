@@ -3,127 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex, nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-65852729-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script src="../page.js"></script>
+        <script src="media.js"></script>
         <title>
             Portfolio of Tom Farmer
         </title>
     </head>
-
-    <body>
+    
+    <body onload="updateMediaContainer()">
         <div class="wrapper">
             <div class="content">
                 <div style="text-align:center">
                     <br>
-
+                    
                     <h1>
                         Tom Farmer
                     </h1>
-
+                    
                     <br>
 
-                    <a href="index.html">
-                        <current>
-                            Portfolio
-                        </current>
-                    </a>
+                    <span class='header-link'><a href="cv.pdf">CV</a></span>
+                    <span class='header-link'><a href='m&#97;ilto&#58;to%6D&#64;fa&#114;m%65r&#46;&#99;x'>to&#109;&#64;farme&#114;&#46;c&#120;</a></span>
+                    <span class='header-link'><a href='https://github.com/frmr'>Github</a></span>
 
                     &nbsp;
-                    &nbsp;
-
-                    <a href="cv.html">
-                        CV
-                    </a>
 
                 </div>
-
+                
                 <br>
+                
                 <hr>
+            </div>
 
-                <p>
-                    <div class="title">
-                        Globe Demo
-                    </div>
-                </p>
-
-                <p>
-                    This globe demo is intended to be used as a test bench for algorithms that produce the political borders of countries on a procedurally generated planet.
-                    Very few serious attempts seem to have been made to develop such algorithms.
-                </p>
-
-                <p>
-                    The <a href="cck.html">CCK</a> was originally designed to create terrain that is realistic enough to be used for national border generation.
-                    This demo adds biomes and rivers to the CCK output, and divides the world into discrete tiles.
-                    A voronoi sphere was used to avoid the distortions that would appear towards the poles on a flat map.
-                </p>
-
-                <p>
-                    The screenshot below shows how the CCK can be used to colour the tiles according to their altitude.
-                    Using the topology of Eurasia will allow me to design the border algorithms around a familiar continent and hopefully produce more realistic countries.
-                    Note the appearance of features like the Alps, Baltic Sea and Himalayas.
-                </p>
-
-                <p>
-                    <div style="text-align:center">
-                        <a href="images/globe_terrain.png">
-                            <img src="images/globe_terrain_preview.png" style="width:10em; height:auto">
-                        </a>
-                    </div>
-                </p>
-
-                <p>
-                    This next screenshot shows the biomes that are created using the ID output from the CCK, which then spread outward from their point of origin (taking terrain into account) to fill the continent.
-                    Green indicates grassland, grey indicates tundra, orange indicates semi-arid and yellow indicates desert.
-                    Darker shades of these colours represent higher altitudes.
-                </p>
-
-                <p>
-                    <div style="text-align:center">
-                        <a href="images/globe_biomes.png">
-                            <img src="images/globe_biomes_preview.png" style="width:10em; height:auto">
-                        </a>
-                    </div>
-                </p>
-
-                <p>
-                    This screenshot shows the addition of river basins in black (the rivers themselves will appear on the surface texture).
-                    Rivers start in hills or mountains and find their way to the sea.
-                </p>
-
-                <p>
-                    <div style="text-align:center">
-                        <a href="images/globe_river_basins.png">
-                            <img src="images/globe_river_basins_preview.png" style="width:10em; height:auto">
-                        </a>
-                    </div>
-                </p>
-
-                <p>
-                    The next stage is to generate textures that allows rivers to be seen and sharp coastal corners to be rounded off.
-                    The first stage of this can be seen below; once rivers are visible, work on country generation can begin.
-                </p>
-
-                <p>
-                    <div style="text-align:center">
-                        <a href="images/globe_textures.png">
-                            <img src="images/globe_textures_preview.png" style="width:10em; height:auto">
-                        </a>
-                    </div>
-                </p>
-
-                <br>
-
+            <div id='project-page-content'>
+                <div id='project-page-title'>Planet Generator</div>
+                <div id='project-page-slideshow'>
+                    <div class='project-page-slideshow-button' onclick='previousMedia()'>&lsaquo;</div>
+                    <div id='project-page-media-container'></div>
+                    <div class='project-page-slideshow-button' onclick='nextMedia()'>&rsaquo;</div>
+                </div>
+                <div id='project-page-selectors'><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div><div class='project-page-selector' onclick='selectorClick(this)'></div></div>
+                <div id='project-page-text'><p>This globe demo is intended to be used as a test bench for algorithms that produce the political borders of countries on a procedurally generated planet. Very few serious attempts seem to have been made to develop such algorithms.</p></div>
             </div>
         </div>
     </body>

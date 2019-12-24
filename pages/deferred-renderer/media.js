@@ -1,0 +1,1 @@
+let media=['media/deferred-renderer.png',]
