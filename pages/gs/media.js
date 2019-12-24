@@ -1,1 +1,1 @@
-let media=['media/globe_biomes.png','media/globe_biomes_preview.png','media/globe_river_basins.png','media/globe_river_basins_preview.png','media/globe_terrain.png','media/globe_terrain_preview.png','media/globe_textures.png',]
+let media=['media/globe_biomes.png','media/globe_river_basins.png','media/globe_terrain.png','media/globe_textures.png',]
