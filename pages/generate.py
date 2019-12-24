@@ -1,10 +1,3 @@
-#list folders
-#for each folder
-    #read title.txt
-    #read text.txt
-    #for file in meda folder
-        #add to media list
-
 import os
 
 def get_title(folder):
@@ -39,7 +32,7 @@ def create_selectors_html(folder):
     html = ''
 
     for filename in os.listdir(media_folder):
-         html += "<div class='project-page-selector'></div>"
+         html += "<div class='project-page-selector' onclick='selectorClick(this)'></div>"
 
     return html
 
@@ -53,7 +46,17 @@ def write_page(folder, html):
     with open(filename, 'w') as file:
         file.write(html)
 
+def write_media_js(folder):
+    media_folder = os.path.join(folder, 'media')
+    javascript = 'let media=['
 
+    for filename in os.listdir(media_folder):
+         javascript += "'" + 'media/' + filename + "',"
+
+    javascript += ']'
+
+    with open(os.path.join(folder, 'media.js'), 'w') as file:
+        file.write(javascript)
 
 template = open_template();
 
@@ -67,4 +70,5 @@ for filename in os.listdir():
         print(get_title(filename))
         print(page)
         write_page(filename, page);
+        write_media_js(filename)
         

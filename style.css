@@ -140,6 +140,14 @@ body {
     height: 20em;
     background-color: grey;
     float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-page-image {
+    width: 100%;
+    height: auto;
+    align-self: center;
 }
 
 #project-page-selectors {
