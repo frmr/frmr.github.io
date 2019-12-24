@@ -1,24 +1,23 @@
 a {
-    color: black;
-    color: inherit;
+    color: #0027DE;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:link {
-    color: #00D;
+    color: #0027DE;
 }
 
 a:visited {
-    color: #00D;
+    color: #0027DE;
 }
 
 a:hover {
-    color: #00D;
+    color: #6681FF;
 }
 
 a:active {
-    color: #00D;
+    color: #6681FF;
 }
 
 h1 {
