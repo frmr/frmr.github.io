@@ -3,9 +3,15 @@ var mediaIndex = 0
 function selectorClick(element) {
 
     var nodes = Array.prototype.slice.call(element.parentNode.children);
-    var container = document.getElementById("project-page-media-container");
-    var filename = media[nodes.indexOf(element)];
+    mediaIndex = nodes.indexOf(element);
 
+    updateMediaContainer();
+}
+
+function updateMediaContainer() {
+    var filename = media[mediaIndex];
+    var container = document.getElementById("project-page-media-container");
+    
     container.innerHTML = "";
 
     if (filename.endsWith("png")) {
@@ -17,6 +23,4 @@ function selectorClick(element) {
     else if (filename.endsWith("mp4")) {
         alert("mp4");
     }
-
-    
 }
