@@ -187,6 +187,15 @@ body {
     margin: 0.5em;
     border-radius: 50%;
     background-color: #aaa;
+    cursor: pointer;
+}
+
+.project-page-selector:hover {
+    background-color: #666
+}
+
+.project-page-selector-selected {
+    background-color: #666;
 }
 
 #project-page-text {

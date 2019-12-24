@@ -10,15 +10,22 @@ function selectorClick(element) {
 
 function updateMediaContainer() {
     var filename = media[mediaIndex];
-    var container = document.getElementById("project-page-media-container");
+    var mediaContainer = document.getElementById("project-page-media-container");
+    var selectors = document.getElementsByClassName("project-page-selector");
 
-    container.innerHTML = "";
+    for (var i = 0; i < selectors.length; ++i) {
+        selectors[i].classList.remove("project-page-selector-selected");
+    }
+    
+    selectors[mediaIndex].classList.add("project-page-selector-selected");
+
+    mediaContainer.innerHTML = "";
 
     if (filename.endsWith("png")) {
         var image = document.createElement("img");
         image.setAttribute("src", filename);
         image.classList.add("project-page-image");
-        container.appendChild(image)
+        mediaContainer.appendChild(image)
     }
     else if (filename.endsWith("mp4")) {
         alert("mp4");
