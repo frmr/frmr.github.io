@@ -163,6 +163,7 @@ body {
 #project-page-media-container {
     width: 30em;
     height: auto;
+    min-height: 22.5em;
     float: left;
 }
 
