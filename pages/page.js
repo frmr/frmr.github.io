@@ -11,7 +11,7 @@ function selectorClick(element) {
 function updateMediaContainer() {
     var filename = media[mediaIndex];
     var container = document.getElementById("project-page-media-container");
-    
+
     container.innerHTML = "";
 
     if (filename.endsWith("png")) {
@@ -23,4 +23,20 @@ function updateMediaContainer() {
     else if (filename.endsWith("mp4")) {
         alert("mp4");
     }
+}
+
+function previousMedia() {
+    if (--mediaIndex == -1) {
+        mediaIndex = media.length - 1;
+    }
+
+    updateMediaContainer();
+}
+
+function nextMedia() {
+    if (++mediaIndex == media.length) {
+        mediaIndex = 0;
+    }
+
+    updateMediaContainer();
 }
