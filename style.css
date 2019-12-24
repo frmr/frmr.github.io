@@ -160,6 +160,10 @@ body {
     }
 }
 
+.project-page-slideshow-button:hover {
+    color: #666;
+}
+
 #project-page-media-container {
     width: 30em;
     height: auto;
