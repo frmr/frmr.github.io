@@ -1,1 +1,1 @@
-let media=['media/login.png',]
+let media=['media/00_login.png','media/10_join.png','media/20_new.png','media/30_review.png','media/40_wrong.png',]
