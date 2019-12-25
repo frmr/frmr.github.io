@@ -207,7 +207,14 @@ body {
 #project-page-text {
     width: 30em;
     height: auto;
-    padding-left: 1em;
-    padding-right: 1em;
     text-align: justify;
+}
+
+#project-page-links {
+    width: 30em;
+    height: auto;
+}
+
+#project-page-links-title {
+    font-size: 150%;
 }

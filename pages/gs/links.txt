@@ -1,0 +1,2 @@
+Source code,https://github.com/frmr/gs
+Windows binary,https://github.com/frmr/gs

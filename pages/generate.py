@@ -18,6 +18,15 @@ def get_text(folder):
     except:
         return []
 
+def get_links(folder):
+    links_file = os.path.join(folder, 'links.txt')
+
+    try:
+        with open(links_file, 'r') as file:
+            return file.read().split('\n')
+    except:
+        return []
+
 def create_text_html(folder):
     text = get_text(folder)
     html = ''
@@ -42,6 +51,18 @@ def create_preloads_html(folder):
 
     for filename in os.listdir(media_folder):
          html += "<img src='media/" + filename + "' width='1' height='1' border='0'>"
+
+    return html
+
+def create_links_html(folder):
+    link_pairs = get_links(folder)
+    html = ''
+
+    print(link_pairs)
+
+    for link_pair in link_pairs:
+        parts = link_pair.split(',')
+        html += "<li><a href='" + parts[1] + "'>" + parts[0] + "</a></li>"
 
     return html
 
@@ -76,6 +97,7 @@ for filename in os.listdir():
         page = page.replace('###TEXT###', create_text_html(filename))
         page = page.replace('###SELECTORS###', create_selectors_html(filename))
         page = page.replace('###PRELOADS###', create_preloads_html(filename))
+        page = page.replace('###LINKS###', create_links_html(filename))
 
         print(get_title(filename))
         write_page(filename, page);
