@@ -36,6 +36,15 @@ def create_selectors_html(folder):
 
     return html
 
+def create_preloads_html(folder):
+    media_folder = os.path.join(folder, 'media')
+    html = ''
+
+    for filename in os.listdir(media_folder):
+         html += "<img src='media/" + filename + "' width='1' height='1' border='0'>"
+
+    return html
+
 def open_template():
     with open('template.html', 'r') as file:
         return file.read();
@@ -66,6 +75,7 @@ for filename in os.listdir():
         page = page.replace('###TITLE###', get_title(filename))
         page = page.replace('###TEXT###', create_text_html(filename))
         page = page.replace('###SELECTORS###', create_selectors_html(filename))
+        page = page.replace('###PRELOADS###', create_preloads_html(filename))
 
         print(get_title(filename))
         write_page(filename, page);
