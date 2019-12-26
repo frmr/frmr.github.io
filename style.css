@@ -178,7 +178,7 @@ body {
     position: absolute;
     color: #eee;
     opacity: 50%;
-    top: 4px;
+    top: 0.15em;
     font-size: 1.75em;
 }
 
@@ -187,11 +187,11 @@ body {
 }
 
 .project-page-slideshow-button-text-left {
-    left: 16px;
+    left: 0.55em;
 }
 
 .project-page-slideshow-button-text-right {
-    left: 19px;
+    left: 0.65em;
 }
 
 #project-page-media-container {
