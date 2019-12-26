@@ -1,3 +1,3 @@
 Source code,https://github.com/frmr/raytracer
-Window binary,https://github.com/frmr/raytracer
+Windows binary,https://github.com/frmr/raytracer/releases/download/v1.0/raytracer.zip
 Performance evaluation,report.pdf
