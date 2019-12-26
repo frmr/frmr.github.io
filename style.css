@@ -171,6 +171,10 @@ body {
     background-color: #aaa;
 }
 
+.project-page-slideshow-button:hover .project-page-slideshow-button-circle {
+    opacity: 0.5;
+}
+
 .project-page-slideshow-button-text {
     position: absolute;
     color: #eee;
@@ -179,17 +183,10 @@ body {
     font-size: 1.75em;
 }
 
-@media (hover: hover) {
-
-    .project-page-slideshow-button:hover .project-page-slideshow-button-circle {
-        opacity: 0.5;
-    }
-
-    .project-page-slideshow-button:hover .project-page-slideshow-button-text {
-        opacity: 1;
-    }
-
+.project-page-slideshow-button:hover .project-page-slideshow-button-text {
+    opacity: 1;
 }
+
 .project-page-slideshow-button-text-left {
     left: 0.59em;
 }
