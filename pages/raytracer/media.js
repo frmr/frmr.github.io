@@ -1,1 +1,1 @@
-let media=['media/raytracer.png',]
+let media=['media/00_output-r2-s4-depth.png','media/10_output-r2-s4.png','media/20_output-r1-s4.png','media/30_output-r0-s4.png',]
