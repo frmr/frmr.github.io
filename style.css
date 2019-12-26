@@ -167,24 +167,24 @@ body {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    opacity: 25%;
+    opacity: 0.25;
     background-color: #aaa;
 }
 
 .project-page-slideshow-button:hover .project-page-slideshow-button-circle {
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 .project-page-slideshow-button-text {
     position: absolute;
     color: #eee;
-    opacity: 50%;
+    opacity: 0.5;
     top: 0.15em;
     font-size: 1.75em;
 }
 
 .project-page-slideshow-button:hover .project-page-slideshow-button-text {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .project-page-slideshow-button-text-left {
