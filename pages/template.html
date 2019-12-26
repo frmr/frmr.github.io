@@ -42,9 +42,19 @@
             <div id='project-page-content'>
                 <div id='project-page-title'>###TITLE###</div>
                 <div id='project-page-slideshow'>
-                    <div class='project-page-slideshow-button' onclick='previousMedia()'>&#10096;</div>
                     <div id='project-page-media-container'></div>
-                    <div class='project-page-slideshow-button' onclick='nextMedia()'>&#10097;</div>
+                    <div id='project-page-slideshow-overlay-centerer'>
+                        <div id='project-page-slideshow-overlay'>
+                            <div class='project-page-slideshow-button' onclick='previousMedia()'>
+                                <div class='project-page-slideshow-button-circle'></div>
+                                <div class='project-page-slideshow-button-text project-page-slideshow-button-text-left'>&#10096;</div>
+                            </div>
+                            <div class='project-page-slideshow-button' onclick='nextMedia()'>
+                                <div class='project-page-slideshow-button-circle'></div>
+                                <div class='project-page-slideshow-button-text project-page-slideshow-button-text-right'>&#10097;</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id='project-page-selectors'>###SELECTORS###</div>
                 <div id='project-page-text'>###TEXT###</div>
