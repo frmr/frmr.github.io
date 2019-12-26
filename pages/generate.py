@@ -66,6 +66,11 @@ def create_links_html(folder):
 
     return html
 
+def count_media(folder):
+    media_folder = os.path.join(folder, 'media')
+
+    return len(os.listdir(media_folder))
+
 def open_template():
     with open('template.html', 'r') as file:
         return file.read();
@@ -98,6 +103,13 @@ for filename in os.listdir():
         page = page.replace('###SELECTORS###', create_selectors_html(filename))
         page = page.replace('###PRELOADS###', create_preloads_html(filename))
         page = page.replace('###LINKS###', create_links_html(filename))
+
+        if count_media(filename) > 1:
+            page = page.replace('###OMIT_START###', '')
+            page = page.replace('###OMIT_END###', '')
+        else:
+            page = page.replace('###OMIT_START###', '<!--')
+            page = page.replace('###OMIT_END###', '-->')
 
         print(get_title(filename))
         write_page(filename, page);

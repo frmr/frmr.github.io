@@ -43,6 +43,7 @@
                 <div id='project-page-title'>Deferred Renderer</div>
                 <div id='project-page-slideshow'>
                     <div id='project-page-media-container'></div>
+                    <!--
                     <div id='project-page-slideshow-overlay-centerer'>
                         <div id='project-page-slideshow-overlay'>
                             <div class='project-page-slideshow-button' onclick='previousMedia()'>
@@ -55,8 +56,11 @@
                             </div>
                         </div>
                     </div>
+                    -->
                 </div>
+                <!--
                 <div id='project-page-selectors'><div class='project-page-selector' onclick='selectorClick(this)'></div></div>
+                -->
                 <div id='project-page-text'><p>This graphics demo was implemented in C++ and OpenGL 2.1.</p><p>It demonstrates deferred rendering, in which the world geometry is first rendered without lighting to offscreen buffers. Each light then performs its own calculations on that data and contributes to the final image. The screenshot shows an example with three zones. Each zone has its own light, but lights can affect any zone drawn in the current frame, resulting in smooth colour blending.</p><p>It also features a zone/portal occlusion culling system, which reduces rendering time by dividing the map into user-defined zones, with 'portals' placed in doorways and corridors between them. If a portal in the current zone lies in the camera's line of sight, the zones beyond it are drawn recursively. A custom binary format was used to specify the locations of zones and portals, and the relationships between them.</p></div>
                 <div id='project-page-links'>
                     <div id='project-page-links-title'>Links</div>

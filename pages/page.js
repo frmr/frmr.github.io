@@ -17,7 +17,8 @@ function updateMediaContainer() {
         selectors[i].classList.remove("project-page-selector-selected");
     }
     
-    selectors[mediaIndex].classList.add("project-page-selector-selected");
+    if (selectors.length)
+        selectors[mediaIndex].classList.add("project-page-selector-selected");
 
     mediaContainer.innerHTML = "";
 
