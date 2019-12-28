@@ -180,11 +180,11 @@ body {
 .project-page-slideshow-button-text {
     position: absolute;
     opacity: 0.5;
-    top: 0.9em;
+    top: 1.05em;
     border: solid #eee;
-    border-width: 0 0.4em 0.4em 0;
+    border-width: 0 0.3em 0.3em 0;
     display: inline-block;
-    padding: 0.4em;
+    padding: 0.3em;
 }
 
 .project-page-slideshow-button:hover .project-page-slideshow-button-text {
@@ -192,12 +192,12 @@ body {
 }
 
 .project-page-slideshow-button-text-left {
-    left: 1.1em;
+    left: 1.175em;
     transform: rotate(135deg);
 }
 
 .project-page-slideshow-button-text-right {
-    left: 0.7em;
+    left: 0.9em;
     transform: rotate(-45deg);
 }
 
