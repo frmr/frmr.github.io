@@ -56,7 +56,6 @@ h1 a:active {
 }
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: #FFF;
     height: 100%;
     margin: 0;
@@ -177,12 +176,21 @@ body {
     opacity: 0.5;
 }
 
+@font-face {
+    font-family: 'dejavu_sansbook';
+    src: url('dejuvusansarrows-webfont.woff2') format('woff2'),
+         url('dejuvusansarrows-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .project-page-slideshow-button-text {
     position: absolute;
     color: #eee;
     opacity: 0.5;
     top: 0.15em;
     font-size: 1.75em;
+    font-family: 'dejavu_sansbook';
 }
 
 .project-page-slideshow-button:hover .project-page-slideshow-button-text {
