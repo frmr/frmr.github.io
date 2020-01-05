@@ -1,1 +1,1 @@
-let media=['media/placeholder.png',]
+let media=['media/0_software-renderer.mp4','media/1_software-renderer_default.png','media/2_software-renderer_fullbright.png','media/3_software-renderer_depth.png','media/4_software-renderer_normals.png','media/5_software-renderer_affine.png','media/6_.png',]

@@ -29,7 +29,27 @@ function updateMediaContainer() {
         mediaContainer.appendChild(image)
     }
     else if (filename.endsWith("mp4")) {
-        alert("mp4");
+        var video = document.createElement("video");
+		video.setAttribute("controls", "controls");
+		
+		var source = document.createElement("source");
+		source.setAttribute("src", filename);
+		source.setAttribute("type", "video/mp4");
+		video.appendChild(source);
+		
+		source = document.createElement("source");
+		source.setAttribute("src", filename.replace(".mp4", ".ogg"));
+		source.setAttribute("type", "video/ogg");
+		video.appendChild(source);
+		
+		source = document.createElement("source");
+		source.setAttribute("src", filename.replace(".mp4", ".webm"));
+		source.setAttribute("type", "video/webm");
+		video.appendChild(source);
+		
+		video.classList.add("project-page-image");
+		
+		mediaContainer.appendChild(video);
     }
 }
 

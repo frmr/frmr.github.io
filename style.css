@@ -163,6 +163,7 @@ body {
     -ms-user-select: none; /* IE10+ */
     align-self: center;
     position: relative;
+	pointer-events: auto;
 }
 
 .project-page-slideshow-button-circle {
@@ -219,6 +220,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+	pointer-events: none;
 }
 
 #project-page-slideshow-overlay {
