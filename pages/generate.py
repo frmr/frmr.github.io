@@ -41,8 +41,7 @@ def create_selectors_html(folder):
     html = ''
 
     for filename in os.listdir(media_folder):
-        if filename.endswith(".png") or filename.endswith(".mp4"):
-         html += "<div class='project-page-selector' onclick='selectorClick(this)'></div>"
+        html += "<div class='project-page-selector' onclick='selectorClick(this)'></div>"
 
     return html
 
@@ -87,8 +86,7 @@ def write_media_js(folder):
     javascript = 'let media=['
 
     for filename in os.listdir(media_folder):
-        if filename.endswith(".png") or filename.endswith(".mp4"):
-            javascript += "'" + 'media/' + filename + "',"
+        javascript += "'" + 'media/' + filename + "',"
 
     javascript += ']'
 
