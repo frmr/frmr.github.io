@@ -32,6 +32,7 @@ function updateMediaContainer() {
         var video = document.createElement("video");
 		video.setAttribute("controls", "controls");
 		video.setAttribute("autoplay", "autoplay");
+		video.setAttribute("muted", "muted");
 		
 		var source = document.createElement("source");
 		source.setAttribute("src", filename);
