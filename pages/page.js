@@ -31,6 +31,7 @@ function updateMediaContainer() {
     else if (filename.endsWith("mp4")) {
         var video = document.createElement("video");
 		video.setAttribute("controls", "controls");
+		video.setAttribute("autoplay", "autoplay");
 		
 		var source = document.createElement("source");
 		source.setAttribute("src", filename);
